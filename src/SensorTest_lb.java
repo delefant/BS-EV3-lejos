@@ -7,8 +7,10 @@ public class SensorTest_lb {
 
         while(true) {
             color = roboter.lichtsensor.sampleLight();
-            if(color < 50){
+            System.out.println(color);
+            if(color < 20){
                 roboter.stop();
+                Helfer.delayProgramm(10.0);
                 break;
             }
         }
