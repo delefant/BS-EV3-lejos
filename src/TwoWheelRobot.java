@@ -8,7 +8,6 @@ public class TwoWheelRobot {
   private Motor motB;
   private Port portB;
   private Port portC;
-  public LichtSensor lichtsensor;
 
   public TwoWheelRobot() {
     this.setSpeed(1.0);
@@ -24,16 +23,10 @@ public class TwoWheelRobot {
 
     motA.connect(portB);
     motB.connect(portC);
-
-    lichtsensor = new LichtSensor("S1");
   }
 
   public double getSpeed() {
     return this.speed;
-  }
-
-  public int getLicht() {
-    return this.lichtsensor.sampleLight();
   }
 
   public void setSpeed(double speed) {
@@ -50,11 +43,11 @@ public class TwoWheelRobot {
     motB.start(this.speed);
   }
 
-  public void driveLeft(double speed){
+  public void driveLeft(double speed) {
     motB.start(speed);
   }
 
-  public void driveRight(double speed){
+  public void driveRight(double speed) {
     motA.start(speed);
   }
 
@@ -71,7 +64,7 @@ public class TwoWheelRobot {
     return (angle / 360.0) * 2.0 * Math.PI * radius;
   }
 
-  public void turn(Character direction){
+  public void turn(Character direction) {
     switch (direction) {
       case 'l':
         motB.start(this.speed);
