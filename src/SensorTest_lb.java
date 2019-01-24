@@ -1,7 +1,7 @@
 public class SensorTest_lb {
 
   public static void main(String[] args) {
-    TwoWheelRobot roboter = new TwoWheelRobot();
+    AutonomerTWR roboter = new AutonomerTWR();
     int color;
     int lc = 0;
 

@@ -1,6 +1,6 @@
 public class SensorTest_la {
     public static void main(String[] args) {
-        TwoWheelRobot roboter = new TwoWheelRobot();
+        AutonomerTWR roboter = new AutonomerTWR();
         System.out.println(roboter.getLicht());
         Helfer.delayProgramm(5.0);
     }
