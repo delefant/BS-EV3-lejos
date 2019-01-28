@@ -11,10 +11,6 @@ public class TwoWheelRobot {
 
   public TwoWheelRobot() {
     this.setSpeed(1.0);
-    this.assemble();
-  }
-
-  private void assemble() {
     baustein = new EV3Brick();
     motA = new Motor();
     motB = new Motor();
