@@ -1,14 +1,20 @@
 public class AutonomerTWR extends TwoWheelRobot {
 
   public LichtSensor lichtsensor;
+  public UltraSchallSensor ultraschallsensor;
 
   AutonomerTWR() {
     super();
-    lichtsensor = new LichtSensor("S1");
+    lichtsensor = new LichtSensor("S4");
+    ultraschallsensor = new UltraSchallSensor("S1");
   }
 
   public int getLicht() {
     return this.lichtsensor.sampleLight();
+  }
+
+  public int getDistance(){
+    return  ultraschallsensor.sampleSonic();
   }
 
   public void followLine(){
