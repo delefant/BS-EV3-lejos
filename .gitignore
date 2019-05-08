@@ -6,6 +6,7 @@
 EV3.iml
 EV3.jar
 .idea
+*.iml
 ### Eclipse ###
 
 .metadata
